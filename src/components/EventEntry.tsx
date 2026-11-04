@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { EVENT, SPONSORS } from "@/config";
+import { CREDIT, EVENT, SPONSORS } from "@/config";
 import { guests } from "@/data/guests";
 
 /**
@@ -273,6 +273,14 @@ export default function EventEntry() {
           <p className="text-[0.74rem] leading-relaxed text-[#eef3f8]/40">{EVENT.legal}</p>
           <p className="tech mt-4 text-[0.55rem] text-[#eef3f8]/30">
             © {new Date().getFullYear()} Barcatini Crew · Venta de entradas a través de Flashpass
+          </p>
+          <p className="tech mt-4 flex flex-wrap items-center gap-x-3 gap-y-1 text-[0.55rem] text-[#eef3f8]/45">
+            <span>Desarrollado y diseñado por</span>
+            <a className="text-[#eef3f8]/80 hover:text-[#e0141f]" href={CREDIT.web} target="_blank" rel="noopener noreferrer">Kodexa</a>
+            <span aria-hidden>/</span>
+            <a className="hover:text-[#e0141f]" href={CREDIT.web} target="_blank" rel="noopener noreferrer">kodexa.ar</a>
+            <span aria-hidden>/</span>
+            <a className="hover:text-[#e0141f]" href={CREDIT.instagram} target="_blank" rel="noopener noreferrer">@{CREDIT.instagramUser}</a>
           </p>
         </div>
       </footer>

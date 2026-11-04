@@ -72,3 +72,10 @@ export const EVENT = {
   ],
   legal: "La participación en sorteos y premios estará sujeta a sus correspondientes bases y condiciones. El evento se reserva el derecho de admisión y permanencia.",
 };
+
+/** Créditos del desarrollo (footer). */
+export const CREDIT = {
+  web: "https://kodexa.ar",
+  instagramUser: "kodexa.ar",
+  instagram: "https://www.instagram.com/kodexa.ar/",
+};
